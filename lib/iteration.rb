@@ -1,4 +1,3 @@
-require 'pry'
 def join_ingredients(src)
   # Given an Array of 2-element Arrays ( [ [food1, food2], [food3, # food4]....[foodN, foodM]]):
   #
@@ -12,7 +11,6 @@ def join_ingredients(src)
   while row_index < src.count do 
     newArray[row_index] = "I love #{src[row_index][0]} and #{src[row_index][1]} on my pizza"
     row_index += 1
-    binding.pry
   end
   newArray
 end
